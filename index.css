@@ -1,0 +1,61 @@
+body {
+  background-color: bisque;
+}
+.main-container {
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-container img {
+  animation-name: mymove;
+  position: relative;
+  animation-duration: 10s;
+}
+@keyframes mymove {
+  from {
+    left: -500px;
+  }
+  to {
+    left: 0px;
+  }
+}
+.image {
+  max-width: 30%;
+  height: auto;
+}
+.card-type {
+  font-size: 20px;
+  color: rgb(19, 18, 19);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.card-name {
+  font-size: 30px;
+  color: deeppink;
+}
+.cards {
+  background-color: #f5f5f5ff;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 90%;
+  text-align: center;
+}
+.cards:hover {
+  animation: bounce 0.5s linear;
+}
+@keyframes bounce {
+  20% {
+    transform: translateY(-8px);
+  }
+}
+#pokedex {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.card-image {
+  width: 180px;
+  height: auto;
+}
